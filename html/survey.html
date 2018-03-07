@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width, minimal-ui">
+    <link rel="stylesheet" href="../public/css/main.css">
+    <script src="../public/js/jquery-1.11.1.min.js"></script>
+    <title>实名认证</title>
+    <style>
+
+    </style>
+</head>
+<body style="background-color: #fff">
+<!--前言-->
+<div class="ak-tit">
+    <div class="akq">
+        <h1>客户信息及风险测评问卷</h1>
+        <div>本问卷旨在了解您可承受的风险程度等情况，借此协助您选择合适的私募基金，以符合您的风险承受能力。</div>
+        <div>风险承受能力评估是本公司向客户履行适当性职责的一个环节，其目的是使本公司所提供的私募基金与您的风险承受能力等级相匹配。</div>
+        <div>本公司特别提醒您：本公司向客户履行风险承受能力评估等适当性职责，并不能取代您自己的投资判断，也不会降低金融产品或金融服务的固有风险。同时，与金融产品或金融服务相关的投资风险、履约责任以及费用等将由您自行承担。</div>
+        <div>本公司提示您：本公司根据您提供的信息对您进行风险承受能力评估，开展适当性工作。您应当如实提供相关信息及证明材料，并对所提供的信息和证明材料的真实性、准确性、完整性负责。</div>
+        <div>本公司建议：当您的各项状况发生重大变化时，需对您所投资的金融产品及时进行重新审视，以确保您的投资决定与您可承受的投资 风险程度等实际情况一致。</div>
+        <div>本公司在此承诺，对于您在本问卷中所提供的一切信息，本公司将严格按照法律法规要求承担保密义务。除法律法规规定的有权机关依法定程序进行查询以外，本公司保证不会将涉及您的任何信息提供、泄露给任何第三方，或者将相关信息用于违法、不当用途。</div>
+    </div>
+</div>
+<div class="ak-question">
+
+    <div class="scores">
+        <h3>一.财务状况</h3>
+        <div class="a-t"><span>1.</span>您的金融资产情况：</div>
+        <div class="choose">
+            <div class="input"><input type="radio" name="score0" id="1"/><label for="1">A.≤50万元</label></div>
+            <div class="input"><input type="radio" name="score0" id="2"/><label for="2">B.50—100万元</label></div>
+            <div class="input"><input type="radio" name="score0" id="3"/><label for="3">C.100—200万元</label></div>
+            <div class="input"><input type="radio" name="score0" id="4"/><label for="4">D.200—300万元</label></div>
+            <div class="input"><input type="radio" name="score0" id="5"/><label for="5">E.≥300万元</label></div>
+        </div>
+    </div>
+    <div class="scores">
+        <div class="a-t"><span>2.</span>最近三年您人年均收入：</div>
+        <div class="choose">
+            <div class="input"><input type="radio" name="score1" id="6"/><label for="6">A.≤10万元</label></div>
+            <div class="input"><input type="radio" name="score1" id="7"/><label for="7">B.10—20万元</label></div>
+            <div class="input"><input type="radio" name="score1" id="8"/><label for="8">C.20—40万元</label></div>
+            <div class="input"><input type="radio" name="score1" id="9"/><label for="9">D.40—50万元</label></div>
+            <div class="input"><input type="radio" name="score1" id="10"/><label for="10">E.≥50万元</label></div>
+        </div>
+    </div>
+    <div class="scores">
+        <div class="a-t"><span>3.</span>您是否有数额较大的债务：</div>
+        <div class="choose">
+            <div class="input"><input type="radio" name="score2" id="11"/><label for="11">A.没有</label></div>
+            <div class="input"><input type="radio" name="score2" id="12"/><label for="12">B.有，为房贷等长期债务</label></div>
+            <div class="input"><input type="radio" name="score2" id="13"/><label for="13">C.有，信用卡、消费信贷等短期债务 </label></div>
+            <div class="input"><input type="radio" name="score2" id="14"/><label for="14">D.有，向亲戚朋友借款</label></div>
+        </div>
+    </div>
+    <div class="scores">
+        <h3>二.投资知识</h3>
+        <div class="a-t"><span>4.</span>以下描述符合您实际情况的是：</div>
+        <div class="choose">
+            <div class="input"><input type="radio" name="score3" id="15"/><label for="15">A.自修并略懂金融、财经、投资类知识</label></div>
+            <div class="input"><input type="radio" name="score3" id="16"/><label for="16">B.具有金融、财经、投资类学习经历</label></div>
+            <div class="input"><input type="radio" name="score3" id="17"/><label for="17">C.从事过金融、财经、投资相关工作</label></div>
+            <div class="input"><input type="radio" name="score3" id="18"/><label for="18">D.我没有金融投资专业知识</label></div>
+        </div>
+    </div>
+    <div class="scores">
+        <h3>三.投资经验</h3>
+        <div class="a-t"><span>5.</span>您的投资经验情况为：</div>
+        <div class="choose">
+            <div class="input"><input type="radio" name="score4" id="19"/><label for="19">A．有限：只把钱存放银 行行或购买低 风险理理财产品</label></div>
+            <div class="input"><input type="radio" name="score4" id="20"/><label for="20">B．一般：我购买过基 金金、保险等理理财产品，但需要进 一步的指导</label></div>
+            <div class="input"><input type="radio" name="score4" id="21"/><label for="21">C．丰富：我参与过股票、基 金金等产品的交易易，投资经验较丰富</label></div>
+            <div class="input"><input type="radio" name="score4" id="22"/><label for="22">D．非常丰富：我参与过私募产品等较 高 风险产品的交易易，经验很丰富</label></div>
+        </div>
+    </div>
+
+    <div class="scores">
+        <h3>四.投资目标</h3>
+        <div class="a-t"><span>6.</span>您用于私募投资的大部分资金的投资期限为：</div>
+        <div class="choose">
+            <div class="input"><input type="radio" name="score5" id="23"/><label for="23">A．短期——0到1年年</label></div>
+            <div class="input"><input type="radio" name="score5" id="24"/><label for="24">B．中期——1到5年年</label></div>
+            <div class="input"><input type="radio" name="score5" id="25"/><label for="25">C．长期——5年年以上</label></div>
+        </div>
+    </div>
+
+    <div class="scores">
+        <h3>四.投资目标</h3>
+        <div class="a-t"><span>7.</span>您希望您购买的私募产品投资于哪些品种(本题为多选，评分以其中最高分值选项为准)：</div>
+        <div class="chooses">
+            <div class="input"><input class="ck" type="checkbox" name="scorex" id="26"/><label for="26">A. 私募股权类投资产品</label></div>
+            <div class="input"><input class="ck" type="checkbox" name="scorex" id="27"/><label for="27">B.	债券、货币市场基 金金、债券基 金金等固定收益类投资品种</label></div>
+            <div class="input"><input class="ck" type="checkbox" name="scorex" id="28"/><label for="28">C.	股票、混合型基 金金、偏股型基 金金、股票型基 金金等权益类投资品种</label></div>
+            <div class="input"><input class="ck" type="checkbox" name="scorex" id="29"/><label for="29">D.	期货、融资融券</label></div>
+            <div class="input"><input class="ck" type="checkbox" name="scorex" id="30"/><label for="30">E.	复杂或 高 风险 金金融产品</label></div>
+            <div class="input"><input class="ck" type="checkbox" name="scorex" id="31"/><label for="31">F.	其他产品</label></div>
+        </div>
+    </div>
+
+    <div class="scores">
+        <h3>五. 风险偏好</h3>
+        <div class="a-t"><span>8.</span>当您进行投资时，您的首要目标是：</div>
+        <div class="choose">
+            <div class="input"><input type="radio" name="score6" id="32"/><label for="32">A．资产保值，我不愿意承担任何投资风险</label></div>
+            <div class="input"><input type="radio" name="score6" id="33"/><label for="33">B．尽可能保证本金安全，不在乎收益率比较低</label></div>
+            <div class="input"><input type="radio" name="score6" id="34"/><label for="34">C．产生较多的收益，可以承担一定的投资风险</label></div>
+            <div class="input"><input type="radio" name="score6" id="35"/><label for="35">D．实现资产大幅增长，愿意承担很大的投资风险</label></div>
+        </div>
+    </div>
+
+    <div class="scores">
+        <div class="a-t"><span>9.</span>您认为自己一般情况下可以承受的最大投资损失是多少？</div>
+        <div class="choose">
+            <div class="input"><input type="radio" name="score7" id="36"/><label for="36">A.10%以内</label></div>
+            <div class="input"><input type="radio" name="score7" id="37"/><label for="37">B.10%-30%</label></div>
+            <div class="input"><input type="radio" name="score7" id="38"/><label for="38">C.30%-50%</label></div>
+            <div class="input"><input type="radio" name="score7" id="39"/><label for="39">D.超过50%</label></div>
+        </div>
+    </div>
+    <div class="scores">
+        <h3>六、其他信息</h3>
+        <div class="a-t"><span>10.</span>您的年年龄是：</div>
+        <div class="choose">
+            <div class="input"><input type="radio" name="score8" id="40"/><label for="40">A.30岁及以下</label></div>
+            <div class="input"><input type="radio" name="score8" id="41"/><label for="41">B.31-40岁</label></div>
+            <div class="input"><input type="radio" name="score8" id="42"/><label for="42">C.41-50岁</label></div>
+            <div class="input"><input type="radio" name="score8" id="43"/><label for="43">D.51-60岁</label></div>
+            <div class="input"><input type="radio" name="score8" id="44"/><label for="44">E.51-60岁</label></div>
+            <div class="input"><input type="radio" name="score8" id="45"/><label for="45">F.超过60岁</label></div>
+        </div>
+    </div>
+</div>
+<div id="btn" class="cj-but">提交</div>
+</body>
+<script>
+
+    var  flag=""
+    //    判断是否都选
+    document.getElementById('btn').onclick = function(){
+        var trs = $(".choose"),
+                len = trs.length,count = 0;
+        for(var i = 0; i < len; i++){
+            var inputs = document.getElementsByName('score'+(i)),ilen= inputs.length;
+            for(var j = 0; j < ilen; j++){
+                if(inputs[j].checked){
+                    count++;
+                }
+            }
+        }
+        if($('.ck').is(':checked')) { flag=1}else{flag=0;}
+        if(count == len&& flag==1){
+//            都被选中
+            alert('全部回答完了')
+
+        }else{
+//            有漏选的
+            alert('有选项漏选咯，请重新检查下')
+        }
+    };
+
+
+</script>
+</html>

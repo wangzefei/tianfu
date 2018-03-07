@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width, minimal-ui">
+    <link rel="stylesheet" href="../public/css/weui.min.css">
+    <link rel="stylesheet" href="../public/css/jquery-weui.min.css">
+    <link rel="stylesheet" href="../public/css/main.css">
+    <title>实名认证</title>
+    <style>
+            .weui-cell{border-bottom: 1px solid #efefef}
+            .ckd{width:110px;display: inline-block;float: left;padding: 0}
+            .ck1{width: 35px;display: inline-block;float: left}
+            .ck2{display: inline-block;float: left}
+           .brno{border: none}
+    </style>
+</head>
+<body>
+<div class="pm1">实名认证</div>
+<div class="weui-cells weui-cells_form" style="margin-top: 8px">
+    <div class="weui-cell">
+        <div class="weui-cell__hd"><label class="weui-label">真实姓名</label></div>
+        <div class="weui-cell__bd">
+            <input class="weui-input"  placeholder="请输入真实姓名">
+        </div>
+    </div>
+    <div class="weui-cell">
+        <div class="weui-cell__hd"><label class="weui-label">身份证号</label></div>
+        <div class="weui-cell__bd">
+            <input class="weui-input"  placeholder="请输入身份证号">
+        </div>
+    </div>
+    <div class="weui-cell">
+        <div class="weui-cell__hd"><label class="weui-label">qq号</label></div>
+        <div class="weui-cell__bd">
+            <input class="weui-input" type="number" pattern="[0-9]*" placeholder="请输入qq号">
+        </div>
+    </div>
+    <div class="weui-cell">
+        <div class="weui-cell__hd"><label class="weui-label">微信号</label></div>
+        <div class="weui-cell__bd">
+            <input class="weui-input"  placeholder="请输入微信号">
+        </div>
+    </div>
+    <div class="weui-cell">
+        <div class="weui-cell__hd" style="width:70px;"><label class="weui-label">头像</label></div>
+        <div class="weui-cell__bd">
+            <div class="weui-cells weui-cells_checkbox" style="margin-top: 0;border-bottom: 1px solid #fff">
+                <label class="weui-cell weui-check__label ckd" for="s11" style="border-bottom: 1px solid #fff">
+                    <div class="weui-cell__hd">
+                        <input type="radio" class="weui-check" name="checkbox1" id="s11" checked="checked">
+                        <i class="weui-icon-checked  ck1"></i>
+                    </div>
+                    <div class="weui-cell__bd ck2">
+                        <p>已采集</p>
+                    </div>
+                </label>
+                <label class="weui-cell weui-check__label ckd" for="s12" style="border-bottom: 1px solid #fff">
+                    <div class="weui-cell__hd">
+                        <input type="radio" name="checkbox1" class="weui-check" id="s12">
+                        <i class="weui-icon-checked ck1"></i>
+                    </div>
+                    <div class="weui-cell__bd ck2">
+                        <p>未采集</p>
+                    </div>
+                </label>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<input type="button" class="butt bottom" value="提交"/>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width, minimal-ui">
+    <link rel="stylesheet" href="../public/css/swiper.min.css">
+    <link rel="stylesheet" href="../public/css/main.css">
+    <title>天福理财</title>
+</head>
+<body>
+<!--本页面仅放广告图，类似启动页-->
+<div class="advertising">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img class="banner" src="../public/img/banner1.png" alt=""/></div>
+            <div class="swiper-slide"><img class="banner" src="../public/img/banner1.png" alt=""/></div>
+            <div class="swiper-slide"><img class="banner" src="../public/img/banner1.png" alt=""/></div>
+            <div class="swiper-slide">
+                <img class="banner" src="../public/img/banner1.png" alt=""/>
+                <div class="ti-more dl"><a href="index.html">查看更多<img class="ti-right" src="../public/img/ico6.png" alt=""/></a></div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+
+<script src="../public/js/swiper.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: {
+            el: '.swiper-pagination',
+        },
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>天福私投</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="../public/css/swiper.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../public/css/tfst.css"/>
+    <!--<link rel="stylesheet" type="text/css" href="../public/css/main.css"/>-->
+    <link rel="stylesheet" type="text/css" href="../public/css/tab.css"/>
+    <script src="../public/js/jquery-1.11.1.min.js"></script>
+    <style>
+        .sf{border-bottom: none}
+    </style>
+</head>
+<body class="padd_40">
+<div class="a">天福私投</div>
+<div class="swiper-container">
+    <div class="refreshtip">下拉可以刷新</div>
+    <div class="swiper-wrapper w">
+        <div class="swiper-slide d">
+            <div class="init-loading list-group-item text-center" style="display: none;">下拉可以刷新</div>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide list-group">
+                    <!--商品放在这里-->
+                    <a href="st-detail.html">
+                        <div class="list-group-item">
+                            <div class="sf">
+                                <div class="sf1 dl jb-co">
+                                    <img src="../public/img/banner1.png" alt=""/>
+                                </div>
+                                <div class="sf2 dl">
+                                    <div class="sf2-1 ovfl ">xxxx一个特别屌的理财特别屌的理财特别屌的理财活动</div>
+
+                                    <div class="sf2-2"><span class="sf2a">正在进行</span><span class="sf2b">直达活动</span> </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </a>
+                    <a href="st-detail.html">
+                        <div class="list-group-item">
+                            <div class="sf">
+                                <div class="sf1 dl jb-co">
+                                    <img src="../public/img/banner1.png" alt=""/>
+                                </div>
+                                <div class="sf2 dl">
+                                    <div class="sf2-1 ovfl ">xxxx一个特别屌的理财特别屌的理财特别屌的理财活动</div>
+
+                                    <div class="sf2-2"><span class="sf2a">正在进行</span><span class="sf2b">直达活动</span> </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </a>
+                    <a href="st-detail.html">
+                        <div class="list-group-item">
+                            <div class="sf">
+                                <div class="sf1 dl jb-co">
+                                    <img src="../public/img/banner1.png" alt=""/>
+                                </div>
+                                <div class="sf2 dl">
+                                    <div class="sf2-1 ovfl ">xxxx一个特别屌的理财特别屌的理财特别屌的理财活动</div>
+
+                                    <div class="sf2-2"><span class="sf2a">正在进行</span><span class="sf2b">直达活动</span> </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </a>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="loadtip">上拉加载更多</div>
+    <div class="swiper-scrollbar"></div>
+</div>
+<script src="../public/js/swiper.jquery.min.js"></script>
+<script type="text/javascript">
+    var loadFlag = true;
+    var oi = 0;
+    var mySwiper = new Swiper('.swiper-container',{
+        direction: 'vertical',
+        scrollbar: '.swiper-scrollbar',
+        slidesPerView: 'auto',
+        mousewheelControl: true,
+        freeMode: true,
+        onTouchMove: function(swiper){		//手动滑动中触发
+            var _viewHeight = document.getElementsByClassName('swiper-wrapper')[0].offsetHeight;
+            var _contentHeight = document.getElementsByClassName('swiper-slide')[0].offsetHeight;
+            if(mySwiper.translate < 50 && mySwiper.translate > 0) {
+                $(".init-loading").html('下拉刷新...').show();
+            }else if(mySwiper.translate > 50 ){
+                $(".init-loading").html('释放刷新...').show();
+            }
+        },
+        onTouchEnd: function(swiper) {
+            var _viewHeight = document.getElementsByClassName('swiper-wrapper')[0].offsetHeight;
+            var _contentHeight = document.getElementsByClassName('swiper-slide')[0].offsetHeight;
+            // 上拉加载
+            if(mySwiper.translate <= _viewHeight - _contentHeight - 50 && mySwiper.translate < 0) {
+                // console.log("已经到达底部！");
+
+                if(loadFlag){
+                    $(".loadtip").html('正在加载...');
+                }else{
+                    $(".loadtip").html('没有更多啦！');
+                }
+
+                setTimeout(function() {
+                    for(var i = 0; i <5; i++) {
+                        oi++;
+                        $(".list-group").append(' <a href="st-detail.html"><div class="list-group-item"><div class="sf"><div class="sf1 dl jb-co"><img src="../public/img/banner1.png" alt=""/></div><div class="sf2 dl"><div class="sf2-1 ovfl ">xxxx一个特别屌的理财特别屌的理财特别屌的理财活动</div><div class="sf2-2"><span class="sf2a">正在进行</span><span class="sf2b">直达活动</span> </div></div></div></div></a>');
+                    }
+                    $(".loadtip").html('上拉加载更多...');
+                    mySwiper.update(); // 重新计算高度;
+                }, 800);
+            }
+
+            // 下拉刷新
+            if(mySwiper.translate >= 50) {
+                $(".init-loading").html('正在刷新...').show();
+                $(".loadtip").html('上拉加载更多');
+                loadFlag = true;
+
+                setTimeout(function() {
+                    $(".refreshtip").show(0);
+                    $(".init-loading").html('刷新成功！');
+                    setTimeout(function(){
+                        $(".init-loading").html('').hide();
+                    },800);
+                    $(".loadtip").show(0);
+
+                    //刷新操作
+                    mySwiper.update(); // 重新计算高度;
+                }, 1000);
+            }else if(mySwiper.translate >= 0 && mySwiper.translate < 50){
+                $(".init-loading").html('').hide();
+            }
+            return false;
+        }
+    });
+
+    $('.tab a').click(function(){
+
+        $(this).addClass('active').siblings('a').removeClass('active');
+        $('.w').css('transform', 'translate3d(0px, 0px, 0px)')
+        $('.swiper-container2 .swiper-slide-active').css('height','auto').siblings('.swiper-slide').css('height','0px');
+        mySwiper.update();
+    });
+</script>
+</body>
+</html>

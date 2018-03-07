@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="../public/css/jquery-weui.min.css"/>
+    <link rel="stylesheet" href="../public/css/weui.min.css"/>
+    <link rel="stylesheet" href="../public/css/tab.css"/>
+    <script src="../public/js/jquery-1.11.1.min.js"></script>
+    <title>优惠券列表</title>
+
+</head>
+<body style="background-color: #F3F3F3;padding-bottom: 20px">
+<div class="weui-tab" >
+    <div class="weui-navbar">
+        <a class="weui-navbar__item weui-bar__item--on" href="#tab1">未使用</a>
+        <a class="weui-navbar__item" href="#tab2">已使用</a>
+        <a class="weui-navbar__item" href="#tab3">已过期</a>
+    </div>
+    <div class="weui-tab__bd">
+        <div id="tab1" class="weui-tab__bd-item weui-tab__bd-item--active">
+            <a href="discount-coupon-detail.html">
+
+            <div class="disc">
+                <div class="disc1 dl jb-co">
+                    <div class="disc1-1"> ¥ <span>10</span></div>
+                    <div class="disc1-2"> 满200可用</div>
+                </div>
+                <div class="disc2 dl">
+                    <div class="disc2-1 ovfl ">全类商品可用（特殊商品除外）</div>
+                    <div class="disc2-2"><span class="di2a">2017.12.6-2017.12.15</span><span class="di2b">立即使用</span> </div>
+                </div>
+
+            </div>
+            </a>
+
+        </div>
+        <div id="tab2" class="weui-tab__bd-item">
+            <div class="disc">
+                <div class="invalid1">
+                    <div class="circle"> 已使用</div>
+                </div>
+                <div class="disc1 dl jb-co invalid">
+                    <div class="disc1-1"> ¥ <span>10</span></div>
+                    <div class="disc1-2"> 满200可用</div>
+                </div>
+                <div class="disc2 dl">
+                    <div class="disc2-1 sl">全类商品可用（特殊商品除外）</div>
+                    <div class="disc2-2"><span class="di2a">2017.12.6-2017.12.15</span> </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+        <div id="tab3" class="weui-tab__bd-item">
+            <div class="disc">
+                <div class="invalid1">
+                    <div class="circle"> 已过期</div>
+                </div>
+                <div class="disc1 dl jb-co  invalid">
+                    <div class="disc1-1"> ¥ <span>10</span></div>
+                    <div class="disc1-2"> 满200可用</div>
+                </div>
+                <div class="disc2 dl">
+                    <div class="disc2-1 sl">全类商品可用（特殊商品除外）</div>
+                    <div class="disc2-2"><span class="di2a">2017.12.6-2017.12.15</span></div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<script src="../public/js/jquery-weui.min.js"></script>
+</body>
+</html>

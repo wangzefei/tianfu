@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>零钱宝</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width, minimal-ui">
+    <link rel="stylesheet" href="../public/css/swiper.min.css">
+    <link rel="stylesheet" href="../public/css/main.css">
+    <script src="../public/js/jquery-1.11.1.min.js"></script>
+    <style>
+        .hea-ls{width: 20px;height: 20px;position: absolute;right: 10px;top:10px;}
+    </style>
+</head>
+<body style="padding-bottom: 50px">
+<div class="header">
+    <div class="hea2">
+        <img class="hea-ls" src="../public/img/icon3.png" alt=""/>
+        <div class="hea2-1">昨日收益（元）</div>
+        <div class="hea2-2">暂无收益 </div>
+        <div class="hea2-3">总收益 <span class="mon1">******</span> <span class="mon2">22.1267</span>   元 <div class="hea2-3a"><img class="hea2-3ai eye1" src="../public/img/icon4.png" alt=""/><img class="hea2-3ai eye2" src="../public/img/ico7.png" alt=""/></div> </div>
+    </div>
+    <div class="hea3">
+        <div class="hea3-1 dl">
+            <div class="hea3-1a">累计收益（元）</div>
+            <div class="hea3-1b sl"><span class="mon1">******</span> <span class="mon2">22.1267</span></div>
+        </div>
+        <div class="hea3-1 dl">
+            <div class="hea3-1a">七日年化（%）</div>
+            <div class="hea3-1b sl">3.9652</div>
+        </div>
+    </div>
+</div>
+<!--轮播-->
+<div style="height: 100px">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img class="banner" src="../public/img/banner1.png" alt=""/></div>
+            <div class="swiper-slide"><img class="banner" src="../public/img/banner1.png" alt=""/></div>
+            <div class="swiper-slide"><img class="banner" src="../public/img/banner1.png" alt=""/></div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+
+
+
+<div class="tf2">
+    <div class="tf2-1"><img src="../public/img/icon10.png" alt=""/>优化理财</div>
+    <!--定存宝入口-->
+    <div class="tf2-2">
+        <div class="dl tf2-2a">
+            <div class="tf2-2a1">4.830%</div>
+            <div class="tf2-2a2">七日年化</div>
+        </div>
+        <div class="dl tf2-2b">
+            <a href="index-dcb.html"><div class="tf2-2b1">低分险、收益稳、灵活取 <img src="../public/img/ico3.png" alt=".tf2-2a"/></div></a>
+            <div class="tf2-2b2">活期理财新选择</div>
+        </div>
+    </div>
+    <!--小额定投入口-->
+
+
+    <div class="tf2-2">
+        <div class="dl tf2-2a">
+            <div class="tf2-2a1">4.830%</div>
+            <div class="tf2-2a2">七日年化</div>
+        </div>
+        <div class="dl tf2-2b">
+            <a href="index-xedt.html"><div class="tf2-2b1">低分险、收益稳、灵活取 <img src="../public/img/ico3.png" alt=".tf2-2a"/></div></a>
+            <div class="tf2-2b2">活期理财新选择</div>
+        </div>
+    </div>
+    <!--尝鲜版入口-->
+    <div class="tf2-2">
+        <div class="dl tf2-2a">
+            <div class="tf2-2a1">4.830%</div>
+            <div class="tf2-2a2">七日年化</div>
+        </div>
+        <div class="dl tf2-2b">
+            <a href="index-ccb.html"> <div class="tf2-2b1">低分险、收益稳、灵活取 <img src="../public/img/ico3.png" alt=".tf2-2a"/></div></a>
+            <div class="tf2-2b2">活期理财新选择</div>
+        </div>
+    </div>
+
+
+</div>
+
+
+<div class="tf3">
+    <a href="index-tz.html"><div class="tf3-1 dl">投资</div></a>
+    <a href="index-tx.html"><div class="tf3-2 dl">赎回</div></a>
+</div>
+
+<script src="../public/js/swiper.min.js"></script>
+
+
+<script>
+   //    轮播初始化
+    var swiper = new Swiper('.swiper-container', {
+        pagination: {
+            el: '.swiper-pagination',
+
+        },
+
+        autoplay:true,
+
+    });
+
+    //总收益的隐藏与显示
+    $(".eye1").click(function(){
+        $(".mon2").css("display","inline-block");
+        $(".mon1").css("display","none");
+        $(".eye2").css("display","inline-block")
+        $(".eye1").css("display","none")
+    })
+    $(".eye2").click(function(){
+        $(".mon1").css("display","inline-block");
+        $(".mon2").css("display","none");
+        $(".eye1").css("display","inline-block")
+        $(".eye2").css("display","none")
+    })
+</script>
+</body>
+</html>

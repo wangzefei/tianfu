@@ -1,0 +1,68 @@
+/*Ìì¸£Ë½Í¶*/
+input[type="button"], input[type="submit"], input[type="reset"] {
+    -webkit-appearance: none;
+}
+html, body{height: 100%;font-family:  "Microsoft YaHei", Helvetica, STHeiTi,"Helvetica Neue","Î¢ÈíÑÅºÚ",SimSun,sans-serif;font-size: 12px}
+*{margin: 0;padding: 0;box-sizing: border-box;}
+a {text-decoration: none;color: black}
+a:hover,a:focus {color: #2a6496;text-decoration: underline;}
+a:focus {outline: thin dotted;outline: 5px auto -webkit-focus-ring-color;outline-offset: -2px;}
+.padd_40{padding-top: 60px;background: #F5F5F5;}
+.a{text-align:center;font-size: 18px;line-height: 60px;line-height: 60px;position: fixed;top: 0;left: 0;width: 100%;z-index: 10;border-bottom: 1px #ccc solid; background: #1B82D1;color: #fff;}
+.tab{display: flex;line-height: 40px;position: fixed;top: 40px;width: 100%;z-index: 10;border-bottom: 1px #ccc solid;}
+.tab a{width: 33.333333%;background: #fff;text-align: center;}
+.tab .active{border-bottom: 1px #1B82D1 solid; color: #1B82D1;}
+.panel{margin: 0;}
+.refreshtip {position: absolute;left: 0;width: 100%;margin: 10px 0;text-align: center;color: #999;}
+.swiper-container{overflow: visible;}
+.loadtip { display: block;width: 100%;line-height: 40px; height: 40px;text-align: center;color: #999;border-top: 1px solid #F3F3F3;}
+.swiper-container, .w{height: calc(100vh - 100px);}
+.swiper-slide{height: auto;}
+.text-center{text-align: center;}
+.list-group{padding-left: 0;margin-bottom: 20px;}
+.list-group-item{    position: relative; display: block;padding: 10px 15px;margin-bottom: -1px;background-color: #fff;border: 5px solid #F3F3F3;}
+.list-group-item:first-child {border-top-left-radius: 4px;border-top-right-radius: 4px;}
+.st-item{height: 80px}
+.st-item1 span{float: left;border-radius: 0.8em;padding: 5px 10px;color: #1B82D1;border: 1px solid #1B82D1}
+.st-item1{height:50px}
+.st-item2{font-size: 20px;font-weight: 800;height: 30px}
+.st-item2-1{display: inline-block;float: left;width:70%;}
+.st-item2 span{float: right;font-size: 14px;width:80px;color: #999; }
+.st-item3s{width: 33.3%;text-align: left;display: inline-block;float: left;font-size: 14px}
+.st-item3s div{overflow: hidden;  white-space: nowrap;  text-overflow: ellipsis;}
+.sl{ overflow: hidden;  white-space: nowrap;  text-overflow: ellipsis;}
+.st3s1{font-size: 20px;color: red}
+.st3s2,.st3s3{font-size: 20px}
+.st3s4{color: #999;margin-top: 5px}
+.tit-img{width: 100%;height: 200px}
+.tit-img img{width: 100%;height: 100%}
+.right2{width: 20px;height: 20px;float: right;margin-top: -2px}
+.std-tit{text-align: center;font-size: 20px;font-weight: 800;background:#fff;line-height: 30px;padding: 10px;border-bottom:10px solid #F1F1F1;}
+.std-main{padding: 10px;font-size: 14px}
+.std-main img{width: 100%}
+
+/*ÖÚ³ï*/
+.zc2,.zc3,.zc4,.zc5,.zc6,.zc9{padding: 0 10px}
+.zc2{text-align: center;line-height: 30px;}
+.zc2-1{width: 40px;height: 30px;display:inline-block;}
+.zc2 img{width: 30px;height: 18px;float: left;margin-top: 15px;margin-left: 3px}
+.zc3{font-size: 18px;font-weight: 800;text-align: center}
+.zc4{text-align: center;margin-top: 10px;color: #999}
+.zc4 span{padding:3px 10px;border: 1px solid #999;border-radius: 0.7em;}
+.zc5{color: #999;text-align: center;margin-top: 20px}
+.zc6{text-align: center;margin-top: 10px}
+.zc6 span{font-size: 18px;font-weight: 800;color:#00C9C9;margin: 0 10px }
+.zc7{background-color: #F4F4F4;margin-top: 10px;height: 55px}
+.zc7-1{display: inline-block;float: left;width: 25%;text-align: center;}
+.zc7-1 div{height: 25px;line-height: 25px;color: #999;overflow: hidden;  white-space: nowrap;  text-overflow: ellipsis;font-size: 12px}
+.zc8 img{width: 100%}
+.zc-but{width: 100%;height: 50px;line-height:50px;text-align: center;color: #fff;background-color:#00CCCC;position: fixed;bottom: 0 }
+.zc9{text-align: center;margin-top: 10px}
+.zc9 span{font-size: 20px;color: red}
+
+.std-but{width: 100%;position: fixed;bottom: 0;height: 40px;}
+.stb1,.stb2{width: 50%;text-align: center;height: 40px;line-height: 40px;display: inline-block;float: left}
+.stb1{background-color: #49A2E6;color: #fff;}
+.stb2{background-color: #F1F1F1;color: #49A2E6;}
+.bottom{position: fixed;bottom: 0}
+.button{border: none;width: 100%;height: 45px;background-color: #118EEA;color: #fff;font-size: 18px;margin-top:10px}
